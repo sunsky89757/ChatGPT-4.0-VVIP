@@ -7,7 +7,7 @@ import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ChatGPT-4.0-turbo",
-  description: "Your personal ChatGPT Chat Bot.",
+  description: "www.gptacg.com",
   viewport: {
     width: "device-width",
     initialScale: 1,
