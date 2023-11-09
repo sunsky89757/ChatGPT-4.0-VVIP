@@ -142,7 +142,7 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-  name: "DALLE-3",
+  name: "dalle-3",
   available: true,
   },
 ] as const;
