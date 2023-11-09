@@ -20,7 +20,8 @@ export enum SubmitKey {
 }
 
 export enum Theme {
-  Auto = "auto",
+  // 这一行注释掉了，默认为暗色区分普通3.5
+  // Auto = "auto",
   Dark = "dark",
   Light = "light",
 }
@@ -46,15 +47,15 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "gpt-4-1106-preview" as ModelType,
     temperature: 0.5,
     top_p: 1,
-    max_tokens: 2000,
+    max_tokens: 100000,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
     historyMessageCount: 4,
-    compressMessageLengthThreshold: 1000,
+    compressMessageLengthThreshold: 2000,
     enableInjectSystemPrompts: true,
     template: DEFAULT_INPUT_TEMPLATE,
   },
