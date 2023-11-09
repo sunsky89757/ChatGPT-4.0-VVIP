@@ -45,7 +45,7 @@ export const DEFAULT_CONFIG = {
 
   customModels: "",
   models: DEFAULT_MODELS as any as LLMModel[],
-
+// 下面把模型从3.5换到了4.0-1106，并且调高了tokens
   modelConfig: {
     model: "gpt-4-1106-preview" as ModelType,
     temperature: 0.5,
