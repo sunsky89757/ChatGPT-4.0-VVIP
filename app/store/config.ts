@@ -20,8 +20,7 @@ export enum SubmitKey {
 }
 
 export enum Theme {
-  // 这一行注释掉了，默认为暗色区分普通3.5
-  // Auto = "auto",
+  Auto = "auto",
   Dark = "dark",
   Light = "light",
 }
