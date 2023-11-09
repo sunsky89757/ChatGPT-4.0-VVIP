@@ -50,7 +50,7 @@ export const DEFAULT_CONFIG = {
     model: "gpt-4-1106-preview" as ModelType,
     temperature: 0.5,
     top_p: 1,
-    max_tokens: 100000,
+    max_tokens: 1000000,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
@@ -83,7 +83,7 @@ export const ModalConfigValidator = {
     return x as ModelType;
   },
   max_tokens(x: number) {
-    return limitNumber(x, 0, 100000, 2000);
+    return limitNumber(x, 0, 10000000, 2000);
   },
   presence_penalty(x: number) {
     return limitNumber(x, -2, 2, 0);
