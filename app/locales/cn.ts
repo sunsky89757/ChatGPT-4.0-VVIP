@@ -310,7 +310,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗，此为新模型入口，[GPT-4初代入口](https://vip.gptacg.com)",
+    BotHello: "有什么可以帮你的吗，此为新模型入口，[[文件上传]](https://up.gptacg.com/upload.php)|[[GPT-4初代入口]](https://vip.gptacg.com)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
