@@ -45,9 +45,8 @@ export const DEFAULT_CONFIG = {
   customModels: "",
   models: DEFAULT_MODELS as any as LLMModel[],
 // 下面把模型从3.5换到了4.0-1106，并且调高了tokens
-// 2023年12月12日因preview有问题，更换为gpt-4
   modelConfig: {
-    model: "gpt-4" as ModelType,
+    model: "gpt-4-1106-preview" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 128000,
